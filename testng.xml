@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="listeners.Listeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/home/test/Desktop/udemyCamp">
+        <classes>
+            <class name="com.freecrm.testcases.ContactPageTest">
+            <methods>
+                <include name="addContact"/>
+            </methods>
+            </class>
+            <class name="com.freecrm.testcases.HomePageTest">
+                <methods>
+                    <include name="clickOnContactsTest"/>
+                    <include name="clickOnDealsTest"/>
+                    <include name="clickOnTasksTest"/>
+                </methods>
+            </class>
+            <class name="com.freecrm.testcases.LoginPageTest">
+                <methods>
+                    <include name="titleTest"/>
+                    <include name="urlCheck"/>
+                    <include name="logoTest"/>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
